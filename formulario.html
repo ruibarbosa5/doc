@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Blink 182 - Inicio</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <xml id="membros" src="juicers.xml"></xml><table datasrc="#envelope">
+        <script src="js/myscript.js"></script>
+        
+        <div id="envelope">
+            <header id="top">
+                <a href="index.html"><img src="images/logo.png" alt="" id="logo"></a>
+            </header>
+<nav id="menu">
+    <ul>
+        <li><a href="index.html">Home</a>
+            <ul>
+                <li><a href="#s1">Apresentação da banda</a></li>
+                <li><a href="#s2">Fotos da banda</a></li>
+                <li><a href="#s3">Vídeo e música</a></li>
+            </ul>
+        </li>
+        <li><a href="membros.html">Membros</a>
+            <ul>
+                <li><a href="#s1">Lista de membros</a></li>
+                <li><a href="#s2">Foto membros atuais</a></li>
+            </ul>
+        </li>
+        <li><a href="discografia.html">Discografia</a></li>
+            <ul>
+                <li><a href="#s1">Álbuns</a></li>
+
+            </ul>
+        <li><a href="tour.html">Tour</a></li>
+        <ul>
+                <li><a href="#s1">Concertos</a></li>
+    </ul>
+    <li><a href="formulario.html">formulário</a></li>
+    <ul>
+        <li><a href="form">Formulário</a></li>
+
+
+</ul>
+</li>
+    </li>
+    </ul>
+</nav>
+
+</table>
+        <form oninput>
+       
+         <label>Full name:</label>
+         <input type="text" id="full_name" name="full_name" placeholder="Rui Barbosa" required>
+       
+         <label>Email address:</label>
+         <input type="email" id="email_addr" name="email_addr" required>
+       
+         <label>Repeat email address:</label>
+         <input type="email" id="email_addr_repeat" name="email_addr_repeat" required 
+          oninput="check(this)">
+       
+
+         <br><br>
+       
+
+         <input type="submit" value="Request Reservation" /> 
+       </form>
+       
+       <script>
+       function check(input) {
+         if (input.value != document.getElementById('email_addr').value) {
+           input.setCustomValidity('The two email addresses must match.');
+         } else {
+           // input is valid -- reset the error message
+           input.setCustomValidity('');
+         }
+       }
+       </script>
+
+    <div class="container">
+	<footer>
+        <p>Copyright Blink 182 &copy; 2021. Last update: </p>
+        <div class="footer-social-icons">
+            <a href="https://pt-pt.facebook.com/blink182/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/blink182/?hl=pt" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/user/blink182" class="fa fa-youtube"></a>
+            <a href="https://twitter.com/blink182" class="fa fa-twitter"></a>
+        </div>
+      </footer>
+     </div>
+    </div>
+
+	</footer>
+</div>
+</body>
+</html>
