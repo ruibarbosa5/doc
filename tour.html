@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Blink 182 - Tour</title>
-     <link rel="stylesheet" type="text/css" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <xml id="cli" src="juicers.xml"></xml><table datasrc="#envelope">
-        <script src="js/myscript.js"></script>
-        
 		<div id="envelope">
 				<header id="top">
 				<a href="index.html"><img src="images/logo.png" alt="" id="logo"></a>
@@ -29,56 +28,111 @@
 					<li><a href="#s2">Foto membros atuais</a></li>
 				</ul>
 			</li>
-			<li><a href="discografia.html">Discografia</a></li>
+			<li><a href="discografia.html">Discografia</a>
 				<ul>
 					<li><a href="#s1">Álbuns</a></li>
 
 				</ul>
 			</li>
-			<li><a href="tour.html">Tour</a></li>
+			<li><a href="tour.html">Tour</a>
 				<ul>
-					<li><a href="#s1">Concertos</a></li>
+					<li><a href="#s1">Tour</a></li>
 		</ul>
-        </li>
-        <li><a href="formulario.html">formulário</a></li>
-        <ul>
-            <li><a href="form">Formulário</a></li>
-    
-
-</ul>
-</li>
+        <li><a href="formulario.html">Formulário</a>
+			<ul>
+				<li><a href="#s1">Formulário</a></li>
+			
+			</ul>
+			</li>
+		</ul>
 	</nav>
 	<section id="s1">
 		<h3>Datas de Concertos</h3>
 
-		<table datasrc="#juicer" width="100%" border="1">
 
-			<thead>
-			<th>Local</th>
-			<th>Data</th>
-			<th>Preço</th>
 
-			</thead>
-			
-		
-			<td><span datafld="name"></span></td>
-			<td><span datafld="date"></span></td>
-			<td><span datafld="price"></span></td>
-
-			</tr>
-			
+		  <div id='content'>
+			<table id='books' >
+				<thead>
+					<tr>
+						<th>Data</th>
+						<th>Local</th>
+						<th>Tour</th>
+						<th>Preço</th>
+						<th>Notas</th>
+					</tr>                
+				</thead>
+				<tbody>
+	
+				</tbody>
 			</table>
-		<table>
-			 <tr>
-  			 <th>27 de Outubro 2017</th>
-  				 <th>Chester Bennington Tribute Concert 2017</th>
-  				 <th>Hollywood Bowl, Los Angeles, CA, US </th>
+		</div>
+	
+		<script>
+			let xmlContent = '';
+			let tableBooks = document.getElementById('books');
+			fetch('tour.xml').then((response)=> {
+				response.text().then((xml)=>{
+					xmlContent = xml;
+	
+					let parser = new DOMParser();
+					let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+					let books = xmlDOM.querySelectorAll('book');
+	
+					books.forEach(bookXmlNode => {
+	
+						let row = document.createElement('tr');
+	
+						//data
+						let td = document.createElement('td');
+						td.innerText = bookXmlNode.children[0].innerHTML;
+						row.appendChild(td);
+	
+						//  local
+						td = document.createElement('td');
+						td.innerText = bookXmlNode.children[1].innerHTML;
+						row.appendChild(td);
+												//preço
+						td = document.createElement('td');
+						td.innerText = bookXmlNode.children[2].innerHTML;
+						row.appendChild(td);
+						//tour
+						td = document.createElement('td');
+						td.innerText = '€ ' + bookXmlNode.children[3].innerHTML;
+						row.appendChild(td);
+	
 
-			</table> 
+						//descrição
+						td = document.createElement('td');
+						td.innerText = bookXmlNode.children[4].innerHTML;
+						row.appendChild(td);
+
+	
+						tableBooks.children[1].appendChild(row);
+						
+					});
+					
+				});
+			});    
+		</script>
+		
 </section>
+
+    <div class="container">
 	<footer>
-		<p>Copyright Blink 182 &copy; 2021</p>
-	</footer>
-</div>
-</body>
+        <p>Copyright Blink 182 &copy; 2021. Last update: </p>
+        <div class="footer-social-icons">
+            <a href="https://pt-pt.facebook.com/blink182/" target="blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/blink182/?hl=pt" target="blank" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/user/blink182" target="blank" class="fa fa-youtube"></a>
+            <a href="https://twitter.com/blink182" target="blank" class="fa fa-twitter"></a>
+        </div>
+    </footer>
+     	</div>
+    </div>
+
+			
+	
+	</body>
+
 </html>
