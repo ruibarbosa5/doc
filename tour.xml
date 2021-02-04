@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<juicers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.juicers.org/"
+	xsi:schemaLocation="http://www.juicers.org/ tour.xsd">
+<catalog>
+   <book id="bk101">
+      <date>2021-03-01</date>
+      <local>Manchester, Inglaterra</local>
+      <tour>NINE TOUR</tour>
+      <price>30.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk102">
+      <date>2021-03-18</date>
+      <local>London, Inglaterra</local>
+      <tour>NINE TOUR</tour>
+      <price>40.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk103">
+      <date>2021-04-22</date>
+      <local>London, Inglaterra</local>
+      <tour>NINE TOUR</tour>
+      <price>40.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk104">
+      <date>2021-05-07</date>
+      <local>Liverpool, Inglaterra</local>
+      <tour>NINE TOUR</tour>
+      <price>50.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk105">
+      <date>2021-05-15</date>
+      <local>Liverpool, Inglaterra</local>
+      <tour>NINE TOUR</tour>
+      <price>50.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk106">
+      <date>2021-08-13</date>
+      <local>Dublin, Irlanda</local>
+      <tour>NINE TOUR</tour>
+      <price>45.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk107">
+      <date>2021-08-23</date>
+      <local>Munique, Alemanha</local>
+      <tour>NINE TOUR</tour>
+      <price>40.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk108">
+      <date>2021-10-03</date>
+      <local>Turin, Itália</local>
+      <tour>NINE TOUR</tour>
+      <price>40.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk109">
+      <date>2021-10-05</date>
+      <local>Roma, Itália</local>
+      <tour>NINE TOUR</tour>
+      <price>47.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk110">
+      <date>2021-11-11</date>
+      <local>Lisboa, Portugal</local>
+      <tour>NINE TOUR</tour>
+      <price>40.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk111">
+      <date>2021-12-15</date>
+      <local>Paris, França</local>
+      <tour>NINE TOUR</tour>
+      <price>43.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+   <book id="bk112">
+      <date>2021-12-22</date>
+      <local>Madrid, Espanha</local>
+      <tour>NINE TOUR</tour>
+      <price>38.99</price>
+      <description>Uso de máscara obrigatório</description>
+   </book>
+</catalog>
+</juicers>
