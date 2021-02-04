@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	
 <head>
 	<meta charset="UTF-8">
@@ -9,8 +9,6 @@
 	 
 </head>
 <body>
-	<xml src="juicers.xml" id="membros" async="false"></xml>
-	
 	
         <script src="myscript.js"></script>
         
@@ -33,79 +31,95 @@
 					<li><a href="#s2">Foto membros atuais</a></li>
 				</ul>
 			</li>
-			<li><a href="discografia.html">Discografia</a></li>
+			<li><a href="discografia.html">Discografia</a>
 				<ul>
 					<li><a href="#s1">Álbuns</a></li>
 
 				</ul>
 			</li>
-			<li><a href="tour.html">Tour</a></li>
+			<li><a href="tour.html">Tour</a>
 			<ul>
 					<li><a href="#s1">Concertos</a></li>
 		</ul>
 		</li>
-        <li><a href="formulario.html">formulário</a></li>
-        <ul>
-            <li><a href="form">Formulário</a></li>
-    
-
-</ul>
-</li>
+        <li><a href="formulario.html">Formulário</a>
+			<ul>
+				<li><a href="#s1">Formulário</a></li>
+			</ul>
+			</li>
+			</ul>
 	</nav>
 	<section id="s1">
 		<h3>Lista de membros de 1992 até ao momento</h3>
 		<div id="colunamembros">
-			<table datasrc="#membros" width="100%" border="1">
 
-				<thead>
-				<th>Nome</th>
-				<th>Idade</th>
-				<th>Atividade</th>
-				<th>Foto</th>
-				<th>Descrição</th>
-				</thead>
-				
-			
-				<td><span datafld="name"></span></td>
-				<td><span datafld="age"></span></td>
-				<td><span datafld="year"></span></td>
-				<td><span datafld="image"></span></td>
-				<td><span datafld="description"></span></td>
-				</tr>
-				
-				</table>
 
-		<p>1993-1997</p>
-	<ol>
+
+		<p><strong>1992-1997</strong></p>
+	<ul>
 			<li>Tom Delonge (vocal/guitarra)</li>
 			<li>Mark Hoppus (vocal/baixo)</li>
 			<li>Scott Raynor (bateria)</li>
-	</ol>
-			</li>
-		<p>1997-2005</p>
+	</ul>
+			
+			
+		<p><strong>1997-2005</strong></p>
 	<ol>
-			<li>Tom Delonge (vocal/guitarra)</li>
-			<li>Mark Hoppus (vocal/baixo)</li>
-			<li>Travis Barker (bateria)</li>
+			<li><u>Tom Delonge (vocal/guitarra)</u></li>
+			<li><u>Mark Hoppus (vocal/baixo)</u></li>
+			<li><u>Travis Barker (bateria)</u></li>
+			
 				</ol>
-			</li>
+			
 
-		<p>2009-2015 (Após pausa)</p>
+		<p><strong>2009-2015 (Após pausa)</strong></p>
 	<ol>
 			<li>Tom Delonge (vocal/guitarra)</li>
 			<li>Mark Hoppus (vocal/baixo)</li>
 			<li>Travis Barker (bateria)</li>
 	</ol>
-		</li>
-			<p>2015-</p>
-	<ol>
-			<li>Matt Skiba (vocal/guitarra)</li>
-			<li>Mark Hoppus (vocal/baixo</li>
-			<li>Travis Barker (bateria)</li>
-	</ol>
-		</li>
+		
+			
+
+			<table>
+				<caption>2015 até atualmente</caption>
+				<thead>
+					<tr>
+						<th>Membro</th>
+						<th>Idade</th>
+						<th>Função</th>
+						<th>Periodo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mark Hoppus</td>
+						<td>49</td>
+						<td>Vocal/Baixo</td>
+						<td rowspan="3">2015-</td>
+					</tr>
+					<tr>
+						<td>Travis Barker</td>
+						<td>45</td>
+						<td>Bateria</td>
+					</tr>
+					<tr>
+						<td>Matt Skiba</td>
+						<td>44</td>
+						<td>Vocal/Guitarra</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4">2 álbuns lançados</td>
+					</tr>
+				</tfoot>
+			</table>
+			
+		</div>
+			
 	
-	</div>
+
 	</section>
 				<section id="s2">
 			<h3>Foto membros atuais</h3>
@@ -117,9 +131,23 @@
 		</figure>
 	</div>
 	</section>
-	<footer>
-		<p>Copyright Blink 182 &copy; 2021.</p>
-	</footer>
+    <div class="container">
+		<footer>
+			<p>Copyright Blink 182 &copy; 2021. Last update: </p>
+			<div class="footer-social-icons">
+				<a href="https://pt-pt.facebook.com/blink182/" class="fa fa-facebook"></a>
+				<a href="https://www.instagram.com/blink182/?hl=pt" class="fa fa-instagram"></a>
+				<a href="https://www.youtube.com/user/blink182" class="fa fa-youtube"></a>
+				<a href="https://twitter.com/blink182" class="fa fa-twitter"></a>
+			</div>
+		</footer>
+
+		
+			 </div>
 	</div>
-</body>
-</html>
+	
+				
+		
+		</body>
+	
+	</html>
